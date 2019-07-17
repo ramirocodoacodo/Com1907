@@ -61,7 +61,7 @@ public class Motocicleta {
 	public void acelerar() {
 		if (enMarcha) {
 			if (velocidad > 0 && velocidad < VEL_MAXIMA) {
-				velocidad *= 1.1;
+				velocidad *= 1.1; 
 				if (velocidad > 130)
 					velocidad = 130;
 			}
