@@ -6,16 +6,27 @@ public class Motocicleta {
 	private String color;
 	private int velocidad;
 	private boolean enMarcha;
-	
+	static int VEL_MAXIMA = 130;
+	static int CONT = 0;
+
 	// Constructor
 	public Motocicleta(String matricula, String color) {
 		this.matricula = matricula;
 		this.color = color; // Getters y Setters
 		velocidad = 0;
 		enMarcha = false;
+		CONT++;
 	}
 
 	// Getters y Setters
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
 	public String getMatricula() {
 		return matricula;
 	}
@@ -28,6 +39,11 @@ public class Motocicleta {
 		return velocidad;
 	}
 
+	public void setVelocidad(int v) {
+		if (enMarcha)
+			velocidad = v;
+	}
+	
 	public boolean enMarcha() {
 		return enMarcha;
 	}
@@ -44,13 +60,16 @@ public class Motocicleta {
 	// Limitar velocidad máxima
 	public void acelerar() {
 		if (enMarcha) {
-			if (velocidad != 0)
+			if (velocidad > 0 && velocidad < VEL_MAXIMA) {
 				velocidad *= 1.1;
-			else
+				if (velocidad > 130)
+					velocidad = 130;
+			}
+			else if (velocidad == 0)
 				velocidad = 10;
 		}
-		//System.out.println(String.valueOf(23));
-		//System.out.println(Math.random());
+		// System.out.println(String.valueOf(23));
+		// System.out.println(Math.random());
 	}
 
 	public String toString() {
