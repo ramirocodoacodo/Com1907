@@ -1,12 +1,12 @@
 package poo.u02;
 
-public class Discografica {
+public class DiscograficaConVectores {
 	private DiscoMusical[] discografia;
 	private String nombre;
 	private int anioCreacion;
 	private int cont;
 	
-	public Discografica (int tamanio, String nombre){
+	public DiscograficaConVectores (int tamanio, String nombre){
 		discografia = new DiscoMusical[tamanio];
 		this.nombre = nombre;
 	}
