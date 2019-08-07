@@ -1,7 +1,7 @@
 package poo.u02;
 
 public class Discografica {
-	private DiscoMusical[] discografia;
+	private DiscoMusical[] discografia ;
 	private String nombre;
 	private int anioCreacion;
 	private int cont;
