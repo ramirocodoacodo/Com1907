@@ -25,6 +25,10 @@ public class Ej05 {
 		discografica.agregarDisco(disco6);
 		discografica.agregarDisco(disco7);
 		System.out.println(discografica.toString());
+		
+		System.out.println(disco2.equals(disco3));
+		System.out.println(disco2.equals(disco1));
+		
 	}
 
 }

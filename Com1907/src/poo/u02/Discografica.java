@@ -1,7 +1,9 @@
 package poo.u02;
+import java.util.ArrayList;
 
 public class Discografica {
 	private DiscoMusical[] discografia;
+	private ArrayList<DiscoMusical> discos;
 	private String nombre;
 	private int anioCreacion;
 	private int cont;
@@ -21,6 +23,11 @@ public class Discografica {
 			return false;
 		}
 
+	}
+
+	public DiscoMusical buscarDisco(DiscoMusical disco) {
+		// Código método
+		return null;
 	}
 
 	public DiscoMusical buscarDisco(String autor) {
