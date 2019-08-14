@@ -1,10 +1,8 @@
-package poo.u02;
+package poo.u03;
 
-import javax.swing.JOptionPane;
+import poo.u02.DiscoMusical;
 
-import poo.u03.Discografica;
-
-public class Ej05 {
+public class MainDiscografica {
 
 	public static void main(String[] args) {
 		DiscoMusical disco1 = new DiscoMusical();
@@ -25,12 +23,13 @@ public class Ej05 {
 		discografica.agregarDisco(disco4);
 		discografica.agregarDisco(disco5);
 		discografica.agregarDisco(disco6);
-		discografica.agregarDisco(disco7);
+		//discografica.agregarDisco(disco7);
 		System.out.println(discografica.toString());
 		
 		System.out.println(disco2.equals(disco3));
 		System.out.println(disco2.equals(disco1));
-		
+		System.out.println(discografica.existeDisco(disco2));
+		System.out.println(discografica.existeDisco(disco7));
 	}
 
 }
