@@ -1,28 +1,26 @@
 package poo.ejemplos;
 
-public class Auto {
+public class Auto extends Vehiculo {
 	// Atributos
-	String color;
-	String marca;
 	String patente;
 	int modelo; // Año de fabricación
 	
 	// Método Constructor
 	public Auto() {
-		
+		super(); // invoco el constructor de la clase padre
+		patente = "";
 	}
 	
-	// Métodos (comportamiento)
-	public void encender() {
-		System.out.println("Encender");
-	}
-	public void avanzar() {
-		System.out.println("Avanzar");
-	}
-	public void acelerar() {
-		System.out.println("Acelerar");
-	}
+	// Sobreescribiendo métodos heredados
 	public void frenar() {
-		System.out.println("Frenar");
+		System.out.println("Frenar auto");
 	}
+
+	@Override
+	public String toString() {
+		return super.toString() + "\n" + 
+	"Auto [patente=" + patente + ", modelo=" + modelo + "]";
+	}
+	
+	
 }
