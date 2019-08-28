@@ -2,14 +2,27 @@ package poo.u04;
 
 public class Persona {
 	private String nombre;
-	//protected String nombre;
+	private String dni;
 	private int edad;
+	private char sexo;
 	// private int cont;
 	
-	protected Persona(String nombre, int edad) {
+	public Persona(String nombre, int edad) {
 		super();
 		this.nombre = nombre;
 		this.edad = edad;
+	}
+
+	public Persona(String dni) {
+		super();
+		this.dni = dni;
+	}
+
+	public Persona(String nombre, String dni, int edad) {
+		super();
+		this.nombre = nombre;
+		this.edad = edad;
+		this.dni = dni;
 	}
 	public String getNombre() {
 		return nombre;
@@ -20,9 +33,36 @@ public class Persona {
 	public int getEdad() {
 		return edad;
 	}
+	
+	public String getDni() {
+		return dni;
+	}
+
+	public void setDni(String dni) {
+		this.dni = dni;
+	}
+
+	public char getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(char sexo) {
+		this.sexo = sexo;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	public boolean esMayorDeEdad() {
+		if (edad>=18)
+			return true;
+		return false;
+	}
+	
 	@Override
 	public String toString() {
-		return "Persona [nombre=" + nombre + ", edad=" + edad + "]";
+		return "Persona [nombre=" + nombre + ", dni=" + dni + ", edad=" + edad + "]";
 	}
 
 }
