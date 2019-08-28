@@ -7,6 +7,8 @@ public class MainCuenta {
 		Cuenta c2 = new Cuenta("28000001", 100);
 		System.out.println(c1);
 		System.out.println(c2);
+		
+		
 	}
 
 }

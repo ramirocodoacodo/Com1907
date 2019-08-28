@@ -12,9 +12,20 @@ public class Cuenta {
 		if (esValido(saldo)) {
 			this.saldo = saldo;
 		}
-		
+
 		titular = new Persona(dniTitular);
 		// this.dniTitular = dniTitular;
+	}
+
+	public Cuenta(String dniTitular, String nombre, int edad, float saldo) {
+		if (esValido(saldo)) {
+			this.saldo = saldo;
+		}
+
+		Persona persona = new Persona(nombre, dniTitular, edad);
+		// this.dniTitular = dniTitular;
+		if (persona.esMayorDeEdad())
+			titular = persona;
 	}
 
 	public Cuenta(String dniTitular) {
@@ -67,6 +78,10 @@ public class Cuenta {
 
 	public void setSaldo(float saldo) {
 		this.saldo = saldo;
+	}
+
+	public boolean esMayorDeEdad() {
+		return this.titular.esMayorDeEdad();
 	}
 
 	// .Getters,Setters,toString
