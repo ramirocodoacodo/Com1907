@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Banco {
 	private String nombre;
 	private ArrayList<Cuenta> cuentas;
+	public static final float descubierto = 3000;
 	
 	public Banco(String nombre) {
 		this.nombre = nombre;

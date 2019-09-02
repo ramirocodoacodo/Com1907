@@ -2,7 +2,7 @@ package poo.u04;
 
 public class Cuenta {
 	// Atributos
-	private float saldo;
+	protected float saldo;
 	// private String dniTitular;
 	private Persona titular;
 	// .Atributos
@@ -34,7 +34,7 @@ public class Cuenta {
 	// .Constructores
 
 	// Metodos
-	private boolean esValido(float saldo) {
+	protected boolean esValido(float saldo) {
 		return saldo > 0;
 	}
 

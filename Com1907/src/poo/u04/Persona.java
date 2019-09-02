@@ -1,10 +1,13 @@
 package poo.u04;
 
+import poo.ejemplos.Domicilio;
+
 public class Persona {
 	private String nombre;
 	private String dni;
 	private int edad;
 	private char sexo;
+	private Domicilio dom;
 	// private int cont;
 	
 	public Persona(String nombre, int edad) {
