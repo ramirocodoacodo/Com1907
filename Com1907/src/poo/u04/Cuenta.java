@@ -1,6 +1,6 @@
 package poo.u04;
 
-public class Cuenta {
+public abstract class Cuenta {
 	// Atributos
 	protected float saldo;
 	// private String dniTitular;
@@ -69,7 +69,7 @@ public class Cuenta {
 	// Getters,Setters,toString
 	@Override
 	public String toString() {
-		return String.format("DNI:%s  ; Saldo Actual: %.2f$\n", getDniTitular(), getSaldo());
+		return String.format("DNI:%s; Saldo Actual: %.2f$", getDniTitular(), getSaldo());
 	}
 
 	public float getSaldo() {
