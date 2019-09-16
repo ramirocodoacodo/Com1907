@@ -3,7 +3,7 @@ package escuela.main;
 
 import escuela.controller.EstudianteController;
 import escuela.model.Estudiante;
-import estudiante.view.EstudianteView;
+import escuela.view.EstudianteView;
 
 public class MainEscuela {
 

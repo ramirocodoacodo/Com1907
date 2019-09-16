@@ -1,7 +1,7 @@
 package escuela.controller;
 
 import escuela.model.Estudiante;
-import estudiante.view.EstudianteView;
+import escuela.view.EstudianteView;
 
 public class EstudianteController {
 	private Estudiante model;
