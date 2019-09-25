@@ -31,14 +31,39 @@ public class Butaca {
 		return estado;
 	}
 
+	/*
 	public void setEstado(String estado) {
 		this.estado = estado;
 	}
-
+	*/
+	
 	// pre: ninguna
 	// pos: devuelve V si pudo ocupar la butaca (estaba libre), 
 	// 		F si no estaba disponible (ocupada o pasillo).
 	public boolean ocupar() {
-		
+		if (getEstado().equals("L")) {
+			estado = "O";
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean liberar() {
+		if (getEstado().equals("O")) {
+			estado = "L";
+			return true;
+		}
+		return false;
+	}
+
+	public boolean pasillo() {
+		estado = "X";
+		return true;
+	}
+	
+	public String toString() {
+		String str = "Fila: " + fila + ", Butaca: " + num + 
+				", Estado: " + estado;
+		return str;
 	}
 }
