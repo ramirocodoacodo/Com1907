@@ -5,6 +5,8 @@ public class Usuario {
 	// Clase Sala (Matriz de 5x8 de butacas)
 	// Clase Butaca
 	// Clase Reserva
+	// Codigo reserva static
+	// Herencia (tipo de sala)
 	
 	private String email;
 	private String pass;
