@@ -18,6 +18,12 @@ public class Reserva {
 		this.butaca = butaca;
 		this.usuario = usuario;
 	}
+
+	@Override
+	public String toString() {
+		return "Reserva [peli=" + peli + ", fecha=" + fecha + ", sala=" + sala + ", butaca=" + butaca + ", num=" + num
+				+ "]";
+	}
 	
 	
 }
