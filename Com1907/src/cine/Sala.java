@@ -1,6 +1,6 @@
 package cine;
 
-public class Sala {
+public class Sala implements ISala4D {
 	// matriz de butacas
 	private Butaca butacas[][];
 	private int num;
@@ -19,7 +19,7 @@ public class Sala {
 	private void inicializarSala() {
 		for (int i = 0; i < butacas.length; i++) {
 			for (int j = 0; j < butacas[i].length; j++) {
-				butacas[i][j] = new Butaca(i,j);
+				butacas[i][j] = new ButacaEstandar(i,j);
 			}
 		}
 		for (int fila = 0; fila < butacas.length; fila++) {
@@ -46,5 +46,10 @@ public class Sala {
 			str = str + "\n";
 		}
 		return str;
+	}
+
+	@Override
+	public void asignarSector4D(int butacaSupIzqFila, int butacaSupIzqCol, int butacaInfDerFila, int butacaInfDerCol) {
+		
 	}
 }

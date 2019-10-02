@@ -1,9 +1,10 @@
 package cine;
 
-public class Butaca {
+public abstract class Butaca {
 	private int fila;
 	private int num;
 	private String estado; // L: Libre, O: Ocupada, X: Pasillo
+	protected boolean luz;
 
 	public Butaca(int f, int num) {
 		fila = f;
@@ -66,4 +67,10 @@ public class Butaca {
 				", Estado: " + estado;
 		return str;
 	}
+	
+//	public abstract void encender();
+	public void encender() {
+		luz = true;
+	};
+
 }
